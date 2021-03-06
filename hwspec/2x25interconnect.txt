@@ -1,0 +1,55 @@
+From view of male connector facing away. Pin 1 marked in upper-right corner.
+
+
+     UI A-rot-outer-1 * 1 U1 A-btn         
+     UI B-btn         * * UI A-rot-outer-2
+     UI B-rot-outer-2 * * UI B-rot-outer-1
+     UI 8-rot-inner-2 * * UI B-rot-inner-1
+     UI A-rot-inner-2 * * UI A-rot-inner-1
+            Cirrus-12 * * Cirrus-14
+            Cirrus-6  * * Cirrus-11
+            Cirrus-5  * * Cirrus-7
+            Cirrus-3  * * Cirrus-4
+                    ? * * ?
+                    ? * * ?
+                    ? * * to WW1 in power sply
+                    ? o o ?
+             IF ctrl? * * 
+                      * * gnd
+                      * * gnd
+                      * * gnd
+                      * * gnd
+                      * * ? via parallel to
+                      * * ? via edgemost TP
+                      *=* gnd
+                      *=* 5V
+                      *=* GND
+                      * * 3V3
+                      * * VISO
+
+
+Front panel:
+ ------------------------------------------------
+|  GSOC                                   _   _  |
+|  ----------------------------------    (A) (B) |
+| |                                  |           |
+| |                                  | [1][2][3] |
+| |                                  | [4][5][6] |
+| |                                  |           |
+| |                                  |       [P] |
+| |                                  |    ....   |
+| |                                  |  .      . |
+| |                                  |  .Rotary. |
+|  ----------------------------------   . Enc  . |
+| X Universal Controller & Data Terminal  ....   |
+ ------------------------------------------------
+A -> Button and coaxial rotary outer=LOW/CNT inner=HT/BW
+B -> Button and coaxial rotary outer=AGC/SQL inner=VOL/S/P
+1 -> Button F
+2 -> Button Po
+3 -> Button ATU
+4 -> Button User (triangle)
+5 -> Button User (square)
+6 -> Button User (circle)
+P -> Button Power/lock
+Rotary -> Main rotary encoder
